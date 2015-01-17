@@ -9,6 +9,8 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
+gem 'mongoid', github: 'mongoid/mongoid'
+gem 'bson_ext'
 
 
 # To use ActiveModel has_secure_password
