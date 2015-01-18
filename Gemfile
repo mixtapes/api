@@ -11,3 +11,7 @@ gem 'spring', :group => :development
 
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'bson_ext'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
