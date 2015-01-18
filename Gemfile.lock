@@ -9,6 +9,13 @@ GIT
       tzinfo (>= 0.3.37)
 
 GIT
+  remote: git://github.com/plataformatec/responders.git
+  revision: c3e2d049e596bc0a76cbc0d1ef298de4926bed16
+  specs:
+    responders (2.0.2)
+      railties (>= 4.2.0, < 5)
+
+GIT
   remote: git://github.com/rails-api/active_model_serializers.git
   revision: 652493848addf6870776619053df0036b1e22a3b
   specs:
@@ -207,6 +214,7 @@ DEPENDENCIES
   mongoid!
   rails (= 4.2.0)
   rails-api
+  responders!
   rspec-rails
   shoulda-matchers
   spring
