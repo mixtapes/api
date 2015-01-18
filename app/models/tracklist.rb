@@ -1,13 +1,16 @@
-class Profile
+class Tracklist
   include Mongoid::Document
-  field :name, type: String
+
+  field :title, type: String
   field :permalink, type: String
 
   # Associations
-  embeds_many :tracklists
+  embedded_in :profile
 
-  validates :name, presence: true
+  # Validations
+  validates :title, presence: true
   validates :permalink, presence: true
+  validates :profile, presence: true
 
   def to_param
     permalink
