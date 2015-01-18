@@ -15,6 +15,10 @@ group :development do
   gem 'guard-rspec', require: false
 end
 
+group :test do
+  gem 'shoulda-matchers'
+end
+
 group :development, :test do
   gem 'rspec-rails'
 end

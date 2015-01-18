@@ -170,6 +170,8 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     shellany (0.0.1)
+    shoulda-matchers (2.7.0)
+      activesupport (>= 3.0.0)
     slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -200,4 +202,5 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails-api
   rspec-rails
+  shoulda-matchers
   spring
