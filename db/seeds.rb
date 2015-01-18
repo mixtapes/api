@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Profile.where(name: 'Liquid').first_or_create! do |profile|
+  profile.permalink = 'liquid'
+end
