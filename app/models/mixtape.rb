@@ -1,4 +1,4 @@
-class Tracklist
+class Mixtape
   include Mongoid::Document
 
   field :title, type: String

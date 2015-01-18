@@ -5,7 +5,7 @@ class Profile
   field :permalink, type: String
 
   # Associations
-  embeds_many :tracklists
+  embeds_many :mixtapes
 
   # Validations
   validates :name, presence: true

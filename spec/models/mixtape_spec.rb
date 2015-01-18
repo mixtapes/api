@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Tracklist, :type => :model do
-  subject { build(:tracklist) }
+RSpec.describe Mixtape, :type => :model do
+  subject { build(:mixtape) }
 
   describe 'validation' do
     it 'requires a profile' do
@@ -21,7 +21,7 @@ RSpec.describe Tracklist, :type => :model do
   end
 
   describe '#to_param' do
-    subject { build(:tracklist, permalink: 'whazzzuuuup') }
+    subject { build(:mixtape, permalink: 'whazzzuuuup') }
     it 'delegates to #permalink' do
       expect(subject.to_param).to eql('whazzzuuuup')
     end
