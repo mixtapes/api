@@ -212,6 +212,7 @@ DEPENDENCIES
   factory_girl_rails
   guard-rspec
   mongoid!
+  pry
   rails (= 4.2.0)
   rails-api
   responders!

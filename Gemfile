@@ -23,5 +23,6 @@ group :test do
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
 end
