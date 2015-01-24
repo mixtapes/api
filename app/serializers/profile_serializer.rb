@@ -1,4 +1,4 @@
-class ProfileSerializer < ActiveModel::Serializer
+class ProfileSerializer < ApplicationSerializer
 
   attributes :id, :name
 
