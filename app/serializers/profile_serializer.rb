@@ -1,11 +1,13 @@
 class ProfileSerializer < ApplicationSerializer
 
-  attributes :id, :name
-
-  url :profile
+  attributes :id, :name, :href
 
   def id
     object.permalink
+  end
+
+  def href
+    profile_path(object)
   end
 
 end
