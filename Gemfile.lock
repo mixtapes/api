@@ -64,10 +64,16 @@ GEM
     bson (2.3.0)
     bson_ext (1.5.1)
     builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
+    columnize (0.9.0)
     connection_pool (2.1.0)
+    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     factory_girl (4.5.0)
@@ -127,6 +133,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (2.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -212,7 +221,7 @@ DEPENDENCIES
   factory_girl_rails
   guard-rspec
   mongoid!
-  pry
+  pry-byebug
   rails (= 4.2.0)
   rails-api
   responders!
