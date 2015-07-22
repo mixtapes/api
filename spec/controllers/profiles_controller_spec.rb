@@ -24,7 +24,21 @@ RSpec.describe ProfilesController, :type => :controller do
         expect(response.status).to eql(200)
       end
 
-      pending "returns a JSON API body"
+      describe 'JSON API representation' do
+        it 'has an id in data' do
+          expect(data['id']).to_not be_empty
+        end
+
+        it 'has a type in data' do
+          expect(data['type']).to_not be_empty
+        end
+
+        describe 'attributes' do
+          it 'has a title' do
+            expect(data['attributes']['title']).to eql(profile.title)
+          end
+        end
+      end
     end
 
     context "with an invalid parameter" do
